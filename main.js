@@ -35,3 +35,8 @@ const cleaveCC = new Cleave ("#cardNumber", {
         }
     },
 });
+
+const cleaveDate = new Cleave("#cardExpiry", {
+    date : true,
+    datePattern : ['m', 'y'],
+})
